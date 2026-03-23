@@ -17,6 +17,7 @@ const GALLERY_IMAGES = [
   "/media__1773931992643.jpg",
   "/5895329642036530425.jpg",
   "/5895329642036530427.jpg",
+  "/maaa.jpg",
 ];
 
 export default function Home() {
@@ -233,11 +234,8 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             className="space-y-6"
           >
-            <div className="flex justify-between items-center mb-6">
+            <div className="mb-6">
               <h2 className="font-serif text-3xl">Captured Moments</h2>
-              <button className="text-sm text-[#8b7355] flex items-center gap-2 hover:text-[var(--color-memorial-dark)] transition">
-                <Camera size={16} /> Add Photo
-              </button>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {GALLERY_IMAGES.map((src, i) => (
@@ -266,24 +264,6 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             className="space-y-10"
           >
-            <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-[var(--color-memorial-secondary)]">
-              <h3 className="font-serif text-2xl mb-6">Share a Memory</h3>
-              <div className="space-y-4">
-                <textarea
-                  placeholder="Share a thought, a memory, or a word of comfort..."
-                  className="w-full bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm outline-none focus:ring-2 focus:border-transparent focus:ring-[#8b7355] transition resize-none h-32"
-                ></textarea>
-                <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
-                  <div className="flex gap-4 w-full md:w-auto">
-                    <input type="text" placeholder="Your Name" className="flex-1 md:flex-none w-full md:w-64 bg-gray-50 border border-gray-200 rounded-xl px-4 py-2 text-sm outline-none focus:ring-2 focus:ring-[#8b7355] transition" />
-                  </div>
-                  <button className="w-full md:w-auto bg-[#8b7355] hover:bg-[#6e5a40] text-white px-8 py-2.5 rounded-full text-sm font-medium transition flex items-center justify-center gap-2 shadow-md">
-                    <Heart size={16} className="fill-current" /> Post Tribute
-                  </button>
-                </div>
-              </div>
-            </div>
-
             <div className="grid md:grid-cols-2 gap-6">
               {/* Family Tribute */}
               <div className="bg-white/70 p-8 rounded-2xl border border-[var(--color-memorial-secondary)] md:col-span-2 shadow-sm">
@@ -340,6 +320,29 @@ export default function Home() {
                 </div>
               </div>
 
+              {/* Grandchildren Tribute */}
+              <div className="bg-white/70 p-8 rounded-2xl border border-[var(--color-memorial-secondary)] md:col-span-2 shadow-sm">
+                <div className="flex justify-between items-start mb-6">
+                  <div>
+                    <h4 className="font-serif text-xl font-medium text-[var(--color-memorial-dark)]">Tribute From Grandchildren</h4>
+                  </div>
+                  <div className="bg-[#8b7355]/10 text-[#8b7355] p-3 rounded-full">
+                    <Heart size={18} className="fill-current" />
+                  </div>
+                </div>
+                <div className="text-base font-light text-gray-700 leading-relaxed font-serif italic space-y-4">
+                  <p>
+                    "As grandchildren of our favourite Grandmother, it sorrows our hearts that we didn’t finish telling her how much of an angel she really was. A loving and compassionate woman who sacrificed her needs for others. She gave so much light and love to everyone around her. Every memory of her bears remnants of her kind soul.
+                  </p>
+                  <p>
+                    Mma Lardi was so selfless, she made us understand that riches meant nothing if we could not extend help to those in need. We will forever miss playing Ludo against our toughest opponent.
+                  </p>
+                  <p className="font-medium text-[var(--color-memorial-dark)] mt-4">
+                    Rest well Grandma"
+                  </p>
+                </div>
+              </div>
+
               {/* Church Tribute */}
               <div className="bg-white/70 p-8 rounded-2xl border border-[var(--color-memorial-secondary)] md:col-span-2 shadow-sm">
                 <div className="flex justify-between items-start mb-6">
@@ -367,41 +370,31 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Sample Tribute */}
-              <div className="bg-white/60 p-6 rounded-2xl border border-[var(--color-memorial-secondary)]">
-                <div className="flex justify-between items-start mb-4">
-                  <div>
-                    <h4 className="font-medium text-[var(--color-memorial-dark)]">Sarah Jenkins</h4>
-                    <span className="text-xs text-gray-400">2 days ago</span>
-                  </div>
-                  <div className="bg-[#8b7355]/10 text-[#8b7355] p-2 rounded-full">
-                    <Heart size={14} className="fill-current" />
-                  </div>
-                </div>
-                <p className="text-sm font-light text-gray-700 leading-relaxed font-serif italic">
-                  "Eleanor was the kindest soul I have ever known. Her guidance helped me through some of my toughest times. I will forever miss her smile and those lemon cakes."
-                </p>
-              </div>
-              <div className="bg-white/60 p-6 rounded-2xl border border-[var(--color-memorial-secondary)]">
-                <div className="flex justify-between items-start mb-4">
-                  <div>
-                    <h4 className="font-medium text-[var(--color-memorial-dark)]">The Miller Family</h4>
-                    <span className="text-xs text-gray-400">3 days ago</span>
-                  </div>
-                  <div className="bg-[#8b7355]/10 text-[#8b7355] p-2 rounded-full">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
-                  </div>
-                </div>
-                <p className="text-sm font-light text-gray-700 leading-relaxed font-serif italic">
-                  "Sending our deepest condolences to the family. What a legacy she has left behind. We made a small contribution in her honor to the local education fund."
-                </p>
-              </div>
             </div>
           </motion.section>
         )}
       </main>
 
+      {/* Footer / Created By */}
+      <footer className="w-full text-center py-8 text-[var(--color-memorial-dark)]/60 font-serif border-t border-[var(--color-memorial-secondary)]/50 mt-12 bg-white/30 backdrop-blur-sm relative z-40">
+        <p className="text-sm tracking-widest uppercase mb-1">
+          Created by <span className="font-bold text-[#8b7355]">Bali-Can Ltd</span>
+        </p>
+      </footer>
 
+      {/* WhatsApp Widget */}
+      <a
+        href="https://wa.me/233539490469"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-[14px] rounded-full shadow-lg border-[3px] border-transparent hover:border-white/50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+        aria-label="Contact Bali-Can Ltd on WhatsApp"
+        title="Chat with Bali-Can Ltd"
+      >
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" stroke="none">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.04-.967-.281-.099-.488-.15-.694.15-.206.3-.778.967-.954 1.166-.175.197-.354.221-.652.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.298-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </a>
 
       {/* Image Lightbox Modal */}
       <AnimatePresence>
