@@ -51,7 +51,7 @@ export default function PDFLayout() {
             </h1>
             
             <p className="text-2xl font-serif text-[#8b7355] tracking-[0.2em] mb-12">
-              ( AKA MAA LARBI )
+              ( AKA MMA LARDI )
             </p>
             
             <p className="text-3xl font-serif italic text-[#4b5563]">
@@ -71,7 +71,7 @@ export default function PDFLayout() {
             
             <div className="flex-1 flex flex-col justify-start max-w-4xl mx-auto w-full">
                 <p className="text-2xl font-serif italic text-center text-[#4b5563] mb-8 px-8 leading-relaxed">
-                  "A life beautifully lived, a heart so deeply loved. Maa Larbi left a mark on everyone she met with her boundless grace and warmth."
+                  "A life beautifully lived, a heart so deeply loved. Mma Lardi left a mark on everyone she met with her boundless grace and warmth."
                 </p>
                 <div className="text-[1.15rem] font-serif leading-10 text-justify text-[#374151] space-y-6">
                     <p className="indent-10">

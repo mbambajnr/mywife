@@ -115,7 +115,7 @@ export default function Home() {
             >
               <div className="inline-block bg-[var(--color-memorial-primary)]/70 backdrop-blur-md py-4 px-6 md:px-8 md:py-6 rounded-3xl border border-[var(--color-memorial-secondary)]/60 shadow-lg">
                 <h1 className="text-3xl md:text-5xl lg:text-5xl font-serif text-[var(--color-memorial-dark)] tracking-tight uppercase leading-tight">
-                  mrs margaret nsobila (AKA MAA LARBI)
+                  Mrs. Margaret Nsobila (AKA MMA LARDI)
                 </h1>
                 <p className="font-serif italic text-xl md:text-2xl text-[#8b7355] mt-2 uppercase">
                   January 1, 1964 — February 21, 2026
@@ -168,7 +168,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-12">
               <div className="flex-1 space-y-6 text-gray-700 leading-relaxed font-light">
                 <p className="text-2xl font-serif italic text-[var(--color-memorial-dark)] leading-snug">
-                  "A life beautifully lived, a heart so deeply loved. Maa Larbi left a mark on everyone she met with her boundless grace and warmth."
+                  "A life beautifully lived, a heart so deeply loved. Mma Lardi left a mark on everyone she met with her boundless grace and warmth."
                 </p>
                 <p>
                   Mrs. Margaret Nsobila was a loving mother, devoted Christian, and respected member of her community. She was born on 1st January, 1964 at Konongo to Mr. Akiekoba and Mrs. Atapora. She grew up with strong values of respect, hard work, humility, and kindness which guided her throughout her life.
